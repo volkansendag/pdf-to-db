@@ -11,6 +11,7 @@ namespace Pdf2Db
             while (true)
             {
                 Console.WriteLine("Lütfen işlem yapılacak klasörü girin");
+
                 string path = Console.ReadLine();
 
                 Console.WriteLine("Arama yapılıyor, lütfen bekleyiniz.");
