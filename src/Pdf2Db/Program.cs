@@ -8,13 +8,19 @@ namespace Pdf2Db
     {
         static void Main(string[] args)
         {
-            string path = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Lütfen işlem yapılacak klasörü girin");
+                string path = Console.ReadLine();
 
-            string[] filePaths = Directory.GetFiles(path, "*.pdf", SearchOption.AllDirectories);
+                Console.WriteLine("Arama yapılıyor, lütfen bekleyiniz.");
 
-            Console.WriteLine($"{filePaths.Length} adet PDF dosyası bulundu");
+                string[] filePaths = Directory.GetFiles(path, "*.pdf", SearchOption.AllDirectories);
 
-            Console.ReadKey();
+                Console.WriteLine($"{filePaths.Length} adet PDF dosyası bulundu");
+
+                Console.WriteLine();
+            }
         }
 
     }
