@@ -23,5 +23,12 @@ namespace Pdf2Db
             }
         }
 
+        static string ReadPdfContent(string path)
+        {
+            // bu bölümde pdf dosyası okunacak ve içerik dönülecek.
+
+            return "";
+        }
+
     }
 }
