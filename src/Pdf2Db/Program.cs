@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Pdf2Db
 {
@@ -6,7 +8,14 @@ namespace Pdf2Db
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string path = Console.ReadLine();
+
+            string[] filePaths = Directory.GetFiles(path, "*.pdf", SearchOption.AllDirectories);
+
+            Console.WriteLine($"{filePaths.Length} adet PDF dosyası bulundu");
+
+            Console.ReadKey();
         }
+
     }
 }
